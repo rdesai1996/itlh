@@ -1,0 +1,117 @@
+<html>
+<head><title>buttons</title></head>
+<link rel="stylesheet" href="C:\Users\Joso\Desktop\itlh\css\bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="form.css">
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <div class="row col-md-12">
+    <h3>registration form</h3><form action="" method="post">
+  <form>
+  <input type="hidden" name="ipaddress" value="192.23.23.2"/>
+  <table>
+  <div>
+  Name:
+  <input type="text" name="fname" placeholder="full name">
+  </div>
+  <div>
+    Phone:
+    <input type="text" name="phone" maxlength="10"/>
+  </div>
+  <div>
+  Email:'
+  <input type="email" name="id"/></div>
+<div>
+  Password:
+  <input type="password" name="pass"/>
+  </div>  
+  <div>
+  gender:
+  male:<input type="radio" name="gen" value="male"/>
+     female: <input type="radio" name="gen" value="female"/>
+  </div>
+<div>
+Phone:
+<input type="text" name="mob" maxlength="10"/>//can also use number type
+  <div>
+  Intrest:'
+  circket:<input type="checkbox" name="int"value="cricket"name="cric"/>
+football:<input type="checkbox" name="int"value="football"name="foot"/>
+dance:<input type="checkbox" name="int"value="dance"name="dance"/>
+
+<div>
+city:
+<select name="city" >
+<option value="">--select-- </option>
+<option value="thane">THANE </option>
+<option value="kurla">KURLA </option>
+<option value="kurla">VASHI </option>
+<option value="suburban">MULUND</option>
+<option value="mumbai">PUNE</option>
+
+</div>  
+<div>
+<input type="submit"name="submit"value="submit"/>
+<input type="reset"name="reset"value="reset"/>
+</div>
+<div>Feedback:
+<textarea name="feedback"cols="30" row="3"></textarea>
+</div>
+</table>
+</form>
+  </div>
+</body>
+</html>

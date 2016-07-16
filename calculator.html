@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<link rel="stylesheet" type="text/css" href="D:\itlh1\css\bootstrap.css">
+</head>
+<body>
+	<p>calculator</p>
+	<div>first no=<input type="text" name="one" id="demo1"/><br></div>
+	<div>
+	second no=<input type="text" name="two" id="demo2"/><br>
+	</div>
+	<div col-md-8>
+	<div><button onclick="add()"> ADD</button></div>
+	<div><button onclick="sub()"> SUB</button></div>
+	<div><button onclick="div()"> DIV</button></div>
+	<div><button onclick="mul()"> MUL</button></div>
+	</div>
+	<div>
+		<button onclick="getinput()">ADDITION</button>
+	</div>
+	<div>
+		<p id="demo">ANSWER: </p>
+	</div>
+	<script type="text/javascript">
+	function getinput(){
+		var x=document.getElementById("demo1").value;
+		var y=document.getElementById("demo2").value;
+		var z=add(x,y);
+	}
+
+		function add(){
+			 var x= parseInt(document.getElementById('demo1').value);
+			 var y=parseInt(document.getElementById('demo2').value);
+			var z=x+y;
+			document.getElementById("demo").innerHTML=z;
+
+		}
+		function sub(){
+			var x= parseInt(document.getElementById('demo1').value);
+			var y=parseInt(document.getElementById('demo2').value);
+			var z=x-y;
+			document.getElementById("demo").innerHTML=z;
+		}
+		function div(){
+			var x= parseInt(document.getElementById('demo1').value);
+			var y=parseInt(document.getElementById('demo2').value);
+			var z=x/y;
+			document.getElementById("demo").innerHTML=z;
+		}
+		function mul(){
+			var x= parseInt(document.getElementById('demo1').value);
+			var y=parseInt(document.getElementById('demo2').value);
+			var z=x*y;
+			document.getElementById("demo").innerHTML=z;
+		}
+	</script>
+
+</body>
+</html>

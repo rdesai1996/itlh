@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>form tag</title>
+<link rel="stylesheet" href="C:\Users\Joso\Desktop\itlh\css\bootstrap.css">
+<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+<h3>registration form</h3><form action="" method="post">
+	<form>
+	<input type="hidden" name="ipaddress" value="192.23.23.2"/>
+	<table>
+	<div>
+	Name:
+	<input type="text" name="fname" placeholder="full name">
+	</div>
+	<div>
+		Phone:
+		<input type="text" name="phone" maxlength="10"/>
+	</div>
+	<div>
+	Email:'
+	<input type="email" name="id"/></div>
+<div>
+	Password:
+	<input type="password" name="pass"/>
+	</div>	
+	<div>
+	gender:
+	male:<input type="radio" name="gen" value="male"/>
+	   female: <input type="radio" name="gen" value="female"/>
+	</div>
+<div>
+Phone:
+<input type="text" name="mob" maxlength="10"/>//can also use number type
+	<div>
+	Intrest:'
+	circket:<input type="checkbox" name="int"value="cricket"name="cric"/>
+football:<input type="checkbox" name="int"value="football"name="foot"/>
+dance:<input type="checkbox" name="int"value="dance"name="dance"/>
+
+<div>
+city:
+<select name="city" >
+<option value="">--select-- </option>
+<option value="thane">THANE </option>
+<option value="kurla">KURLA </option>
+<option value="kurla">VASHI </option>
+<option value="suburban">MULUND</option>
+<option value="mumbai">PUNE</option>
+
+</div>	
+<div>
+<input type="submit"name="submit"value="submit"/>
+<input type="reset"name="reset"value="reset"/>
+</div>
+<div>Feedback:
+<textarea name="feedback"cols="30" row="3"></textarea>
+</div>
+</table>
+</form>
+</body>
+</html>
